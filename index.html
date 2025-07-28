@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>З Днем Народження, Брате!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-dark: #1a1a1a;
+            --text-light: #f0f0f0;
+            --accent-color: #6a0dad;
+            --subtle-gray: #444;
+            --quote-text-color: #d0d0d0;
+            --separator-color: #555;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+            text-align: center;
+            line-height: 1.6;
+            font-size: 1.1em;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(30, 30, 30, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-out forwards;
+            opacity: 0;
+            position: relative;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .intro-quote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3em;
+            color: var(--quote-text-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 25px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .separator {
+            border: none;
+            border-top: 1px solid var(--separator-color);
+            margin: 50px auto;
+            width: 50%;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .main-content p,
+        .intro-quote p {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .main-content p:last-of-type {
+            margin-bottom: 0;
+            font-weight: 600;
+            color: var(--accent-color);
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            body {
+                font-size: 1em;
+            }
+            .intro-quote {
+                font-size: 1.1em;
+                padding-left: 20px;
+            }
+            .main-content p {
+                font-size: 1em;
+            }
+            .separator {
+                width: 70%;
+                margin: 40px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            body {
+                font-size: 0.9em;
+            }
+            .intro-quote {
+                font-size: 1em;
+                padding-left: 15px;
+            }
+            .main-content p {
+                font-size: 0.9em;
+            }
+            .separator {
+                width: 80%;
+                margin: 30px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>З Днем Народження, Брате!</h1>
+
+        <div class="intro-quote">
+            <p class="fade-in">Останній раз ти згадував, що готовий за мене весь світ порвати, що щиро чекаєш коли я зможу сказати так само.</p>
+            <p class="fade-in">І тоді я усвідомив, що я ніколи тобі не казав як я тебе ціную. Тому я вирішив привітати тебе з ДН саме таким чином.</p>
+            <p class="fade-in">І хоча мені не вдалося покласти ці слова у віршовану форму, зате вони щирі...</p>
+        </div>
+
+        <hr class="separator">
+
+        <div class="main-content">
+            <p class="fade-in">Ти дорослішав першим - щоб я міг рости без тривоги.</p>
+            <p class="fade-in">Ти відмовлявся від свого - аби я йшов власною дорогою.</p>
+            <p class="fade-in">Ти мовчки жертвував, нічого не просячи взамін.</p>
+            <p class="fade-in">Але усі твої старання я зберіг у серці, і несу їх крізь час немов оберіг.</p>
+            <p class="fade-in">І я зроблю усе, щоб вони не були марні,</p>
+            <p class="fade-in">Бо ти дав мені більше, ніж сам коли-небудь мав. І я за це вдячний.</p>
+            <p class="fade-in">Тому з днем народження тебе братику,</p>
+            <p class="fade-in">Хай в твоєму житті буде побільше сміху, щастя, радості.</p>
+            <p class="fade-in">А твій шлях буде легкий та цікавий, сповнений цікавих пригод та світлих людей.</p>
+            <p class="fade-in">Бажаю здоров'я, сили, тепла,</p>
+            <p class="fade-in">І знай, що ти заслуговуєш більше, ніж ці слова!</p>
+        </div>
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://res.cloudinary.com/dipgzvnk8/video/upload/v1753731506/maxkomusic-heroism_chosic.com_zqk3uk.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує аудіо елемент.
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.querySelector('audio');
+            if (audio) {
+                audio.volume = 0.15;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
